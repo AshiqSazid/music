@@ -1,9 +1,9 @@
 streamlit==1.45.1
 librosa==0.10.1
-tensorflow==2.16.1
+tensorflow==2.12.0
 tensorflow_hub==0.16.1
-openl3 
-numpy==1.26.4
+openl3==0.4.2
+numpy==1.23.5
 pandas==1.5.3
 matplotlib==3.7.1
 scikit-learn==1.2.2
