@@ -11,3 +11,37 @@ textblob==0.17.1
 soundfile==0.12.1
 pydub==0.25.1
 ffmpeg-python==0.2.0
+========
+# === Core Dependencies ===
+numpy
+pandas
+librosa
+matplotlib
+soundfile
+tqdm
+joblib
+
+# === Machine Learning & Embeddings ===
+scikit-learn
+sentence-transformers
+tensorflow
+tensorflow-hub
+torch
+torchaudio
+
+# === NLP and Sentiment ===
+transformers
+nltk
+
+# === Audio & Web Utilities ===
+openl3
+pydub
+yt-dlp
+youtube-transcript-api
+requests
+spotipy
+python-dotenv
+
+# === UI & Export ===
+gradio
+fpdf
