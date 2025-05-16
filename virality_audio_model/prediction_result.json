@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "virality_score": 0.5
+  },
+  "predictions_sample": [
+    {
+      "predicted": 0.5
+    }
+  ]
+}
