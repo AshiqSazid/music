@@ -114,7 +114,7 @@ pip install -r requirements.txt
 
 ## 📘 Citation
 
-If you use or adapt this project, please cite it or give a GitHub star ⭐️. Credit where it’s due!
+If you use or adapt this project, please cite it or give a GitHub star ⭐️.
 
 ---
 
