@@ -16,10 +16,10 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 → Multimodal embeddings via **OpenL3** + **Transformers** for smart emotion and genre prediction.
 
 📈 **Virality Prediction**  
-→ Predicts how viral your track could be using a **fine-tuned Random Forest model** on audio + metadata features.
+→ Predicts how viral your track could be using a  **fine-tuned Random Forest model** on audio + metadata features.also we can use **RAG** fro extracting from dataset to give the virality of score.
 
 🧠 **LLM-Powered Music Insights**  
-→ Uses **Mistral/DeepSeek** via **Ollama** to generate human-like interpretations of your music’s structure, emotion, and trends.
+→ Uses  langchain and **Mistral/DeepSeek** via **Ollama** to generate human-like interpretations of your music’s structure, emotion, and trends.
 
 📄 **PDF + CSV Export**  
 → Generates printable reports with mood, genre, instrument maps, and LLM insights.
