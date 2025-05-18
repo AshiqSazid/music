@@ -1,6 +1,6 @@
 
 # 🎵 Music Intelligence Assistant (BEAST MODE)
-## Full REPORT ON THIS PROJECT : https://docs.google.com/document/d/1ajDZv-EsEBVNkJ76rp-ZMhPLmOnPuq03gs1MmVOKpP0/edit?usp=sharing
+## Full report on this : https://docs.google.com/document/d/1ajDZv-EsEBVNkJ76rp-ZMhPLmOnPuq03gs1MmVOKpP0/edit?usp=sharing
 ##Task 1+2 Colab : https://colab.research.google.com/drive/1bTWqKOauz5yyI1CvKuWktY-8mvPiMifd?usp=sharing
 An all-in-one AI-powered music analysis platform that turns audio and lyrics into deep, actionable insights. Built for musicians, data scientists, content creators, and curious minds.
 
@@ -36,14 +36,15 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 
 🎵 **Spotify Integration**  
 → Fetches popularity score, genre tags, and artist metadata to enhance virality prediction.
-
+**Used RandomForestRegressor and RAG for better output **
 ---
 
 ## 🗂️ File Structure
 
 ```
 
-z.py                  # Main Streamlit app
+z.py                  # Main Gradio app
+gardio_langchain.py   #also main gradio app using langchain
 /analysis/            # Instrument, lyric, and audio analysis modules
 /models/              # Pretrained + custom-trained models
 /utils/               # Spotify API, visualization, feature extractors
