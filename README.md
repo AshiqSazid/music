@@ -1,10 +1,9 @@
 
-# 🎵 Music Intelligence Assistant (BEAST MODE)
+# 🎵 Music Intelligence Assistant and Virality track prediction
 ## Full report on this : https://docs.google.com/document/d/1ajDZv-EsEBVNkJ76rp-ZMhPLmOnPuq03gs1MmVOKpP0/edit?usp=sharing
 ##Task 1+2 Colab : https://colab.research.google.com/drive/1bTWqKOauz5yyI1CvKuWktY-8mvPiMifd?usp=sharing
 An all-in-one AI-powered music analysis platform that turns audio and lyrics into deep, actionable insights. Built for musicians, data scientists, content creators, and curious minds.
 
-> "From waveform to wisdom — let the AI decode the music."
 
 ---
 
@@ -36,7 +35,7 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 
 🎵 **Spotify Integration**  
 → Fetches popularity score, genre tags, and artist metadata to enhance virality prediction.
-**Used RandomForestRegressor and RAG for better output **
+🎵 **Used RandomForestRegressor and RAG for better output **
 ---
 
 ## 🗂️ File Structure
