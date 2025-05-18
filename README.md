@@ -35,7 +35,8 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 
 🎵 **Spotify Integration**  
 → Fetches popularity score, genre tags, and artist metadata to enhance virality prediction.
-🎵 **Used RandomForestRegressor and RAG for better output **
+
+🎵 **Used RandomForestRegressor and RAG for better output**
 ---
 
 ## 🗂️ File Structure
