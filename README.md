@@ -66,7 +66,8 @@ git clone https://github.com/AshiqSazid/music.git
 pip install -r requirements.txt
 
 # 3. Run the app
- z.py
+ z.py or,
+gradio_langchain.py
 ````
 
 ---
