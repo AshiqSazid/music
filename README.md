@@ -74,12 +74,14 @@ requirements.txt
 # 1. Clone the repo
 git clone https://github.com/AshiqSazid/music.git
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. TASK 1+2 colab.ipynb ( https://colab.research.google.com/drive/1bTWqKOauz5yyI1CvKuWktY-8mvPiMifd?usp=sharing  )
 
 # 3. Run the app
  z.py or,
 gradio_langchain.py
+
+# 4. Install dependencies
+pip install -r requirements.txt
 ````
 
 ---
