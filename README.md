@@ -99,7 +99,8 @@ pip install -r requirements.txt
 | Audio         | `librosa`, `YAMNet`, `OpenL3`, `Spleeter`             |
 | NLP/Lyrics    | `Transformers`, `Sentence-BERT`, `spaCy`              |
 | ML/Prediction | `RandomForest`, `scikit-learn`, `XGBoost` (option)    |
-| LLM           | `Mistral` / `DeepSeek` via `Ollama` (local inference) |
+| LLM           | `Mistral` / `DeepSeek` via `Ollama` (local inference), `langchain` |
+| RAG           | `Embedding-based Retrieval` / `Metadata Filtering`,`FAISS VECTOR`, |
 | UI            | `Streamlit`, `matplotlib`, `t-SNE`, `Altair`          |
 | Others        | `FFmpeg`, `Spotify API`, `pandas`, `pdfkit`           |
 
@@ -123,8 +124,8 @@ If you use or adapt this project, please cite it or give a GitHub star ⭐️. C
 ## 🧑‍💻 Author
 
 Built by **Ashiq Sazid**
-🎓 Music meets AI | 🛠️ Developer | 🔬 Researcher
-Let’s connect: [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/AshiqSazid)
+🎓 Music meets AI | 🛠️Ai & backend Developer | 🔬 Researcher
+Let’s connect: [LinkedIn](https://www.linkedin.com/in/ashiq-sazid/) | [GitHub](https://github.com/AshiqSazid)
 
 ---
 
@@ -134,16 +135,10 @@ Let’s connect: [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github
 python z.py / python gradiolangchain.py(with langchain)
 ```
 
-Or package it as a Hugging Face Space or Streamlit Community App for public access.
-
-
----
-
-🎶 *From notes to knowledge, this is AI for artists.*
+Or package it as a Hugging Face Space or Gradio Community App for public access.
 
 ```
 
 ---
 
-Would you like a `.md` file version of this, or do you want me to prepare it with image embeds or badges for GitHub as well?
 ```
