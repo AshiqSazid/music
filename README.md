@@ -1,7 +1,8 @@
 
 # 🎵 Music Intelligence Assistant and Virality track prediction
-## Full report on this : https://docs.google.com/document/d/1ajDZv-EsEBVNkJ76rp-ZMhPLmOnPuq03gs1MmVOKpP0/edit?usp=sharing
-##Task 1+2 Colab : https://colab.research.google.com/drive/1bTWqKOauz5yyI1CvKuWktY-8mvPiMifd?usp=sharing
+## file name: Full report on this : https://docs.google.com/document/d/1ajDZv-EsEBVNkJ76rp-ZMhPLmOnPuq03gs1MmVOKpP0/edit?usp=sharing
+## file name:Task 1+2 Colab : https://colab.research.google.com/drive/1bTWqKOauz5yyI1CvKuWktY-8mvPiMifd?usp=sharing
+## file name: z.py or, gradio_langchain.py (with langchain) to deploy in gradio
 An all-in-one AI-powered music analysis platform that turns audio and lyrics into deep, actionable insights. Built for musicians, data scientists, content creators, and curious minds.
 
 
