@@ -38,7 +38,18 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 
 🎵 **Used RandomForestRegressor and RAG for better output**
 ---
+## 📊 Outputs You’ll Get
 
+* 🎹 Instrument breakdown charts
+* 🎨 Mood/genre visualizations (t-SNE)
+* 🧾 PDF/CSV summary reports
+* 🤖 Smart feedback from a local LLM
+* 🔥 Virality prediction with confidence scores
+* 🎙️ Real-time performance feedback (timing, pitch, dynamics)
+* 📱 TikTok/Instagram virality score prediction
+* Implement first way with spotify api,it can also give Virality prediction scores
+* For more enhancement i've used RandomForestRegressor,RAG,ollama mistral will give you  Virality prediction with confidence scores
+* I've implemented, stremelit,gradio also hugging face with ngork.Found gradio as a  clean good interfence.
 ## 🗂️ File Structure
 
 ```
@@ -73,17 +84,7 @@ gradio_langchain.py
 
 ---
 
-## 📊 Outputs You’ll Get
 
-* 🎹 Instrument breakdown charts
-* 🎨 Mood/genre visualizations (t-SNE)
-* 🧾 PDF/CSV summary reports
-* 🤖 Smart feedback from a local LLM
-* 🔥 Virality prediction with confidence scores
-* 🎙️ Real-time performance feedback (timing, pitch, dynamics)
-* 📱 TikTok/Instagram virality score prediction
-* Implement first way with spotify api,it can also give Virality prediction scores
-* For more enhancement i've used RandomForestRegressor,RAG,ollama mistral will give you  Virality prediction with confidence scores
 ---
 
 ## 💡 Tech Stack
