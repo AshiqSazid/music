@@ -45,10 +45,11 @@ An all-in-one AI-powered music analysis platform that turns audio and lyrics int
 
 z.py                  # Main Gradio app
 gardio_langchain.py   #also main gradio app using langchain
-/analysis/            # Instrument, lyric, and audio analysis modules
-/models/              # Pretrained + custom-trained models
-/utils/               # Spotify API, visualization, feature extractors
-/assets/              # Logos, icons, sample reports
+
+TASK 1+2 colab.ipynb   #code of task 1 and 2
+
+/FULL REPORT ON THIS PROJECT/  # Report on this project
+
 README.md
 requirements.txt
 
