@@ -80,18 +80,10 @@ gradio_langchain.py
 * 🧾 PDF/CSV summary reports
 * 🤖 Smart feedback from a local LLM
 * 🔥 Virality prediction with confidence scores
-
----
-
-## 🔮 Future Upgrades
-
 * 🎙️ Real-time performance feedback (timing, pitch, dynamics)
-* 🌐 Multilingual lyric analysis + translation
-* 🧬 Listener persona modeling
-* 🎥 AI-generated sync visuals for music videos
 * 📱 TikTok/Instagram virality score prediction
-* 🤖 Auto hashtag + caption generation for musicians
-
+* Implement first way with spotify api,it can also give Virality prediction scores
+* For more enhancement i've used RandomForestRegressor,RAG,ollama mistral will give you  Virality prediction with confidence scores
 ---
 
 ## 💡 Tech Stack
