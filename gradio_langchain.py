@@ -1,17 +1,19 @@
+from langchain.llms import Ollama
+from langchain.prompts import PromptTemplate
+from langchain.chains import LLMChain
 import gradio as gr
 import json
 import pandas as pd
-import requests
 
-# === Load data ===
+# data
 with open("results.json", "r") as f1:
     task1_data = json.load(f1)
 with open("prediction_result.json", "r") as f2:
     task2_data = json.load(f2)
-# Load CSV with proper encoding
+
 popularity_df = pd.read_csv("playlist_with_popularity.csv", encoding="ISO-8859-1")
 
-# === Helper: interpret virality score ===
+#Interpret virality
 def interpret_virality(score):
     if score >= 80:
         return "🟢 Viral asf"
@@ -21,14 +23,14 @@ def interpret_virality(score):
         return "🔴 Not that viral"
     return "⚪ Flop"
 
-# === Helper: get virality from CSV ===
+#Get virality from CSV
 def get_csv_virality(index):
     try:
         return int(popularity_df.iloc[index]['track_popularity'])
     except:
-        return 0  # Default if not available
+        return 0
 
-# === Format song feature summary ===
+#Format summary
 def format_song_summary(index):
     row = task2_data["predictions_sample"][index]
     instruments = list(task1_data.get("proportions", {}).keys())
@@ -45,39 +47,42 @@ def format_song_summary(index):
     summary += f"\n Virality Score: {virality_score} → {virality_label}"
     return summary
 
-# === Local Ollama Mistral LLM Query ===
-def query_mistral(prompt):
-    try:
-        res = requests.post("http://localhost:11434/api/generate", json={
-            "model": "mistral",
-            "prompt": prompt,
-            "stream": False
-        })
-        return res.json().get("response", " No response from Ollama.")
-    except Exception as e:
-        return f" Failed to connect to Ollama: {e}"
+#LangChain Mistral LLM
+llm = Ollama(model="mistral")
 
-# === Main analysis function ===
+prompt_template = PromptTemplate(
+    input_variables=["summary", "question"],
+    template="""
+{summary}
+
+User Question: {question}
+
+🧠 Answer:
+"""
+)
+
+llm_chain = LLMChain(llm=llm, prompt=prompt_template)
+
+#Main Function
 def analyze_audio(index, user_question, audio_file):
     summary = format_song_summary(index)
-    full_prompt = summary + "\n\n Question: " + user_question + "\n🧠 Answer:"
-    response = query_mistral(full_prompt)
+    response = llm_chain.run(summary=summary, question=user_question)
     return summary, response
 
-# === Gradio UI ===
+#gradio UI
 demo = gr.Interface(
     fn=analyze_audio,
     inputs=[
         gr.Slider(0, len(task2_data["predictions_sample"]) - 1, step=1, label="🎵 Sample Index"),
-        gr.Textbox(lines=2, label="🗣️ Ask Mistral (e.g., is this good for gym playlist?)"),
-        gr.Audio(label="🔊 Upload audio file (optional, for context only)", type="filepath")
+        gr.Textbox(lines=2, label="🗣️ Ask Mistral (via LangChain)"),
+        gr.Audio(label="🔊 Upload audio file (optional)", type="filepath")
     ],
     outputs=[
-        gr.Textbox(label=" Structured Summary + Virality"),
-        gr.Textbox(label=" Mistral’s Suggestion")
+        gr.Textbox(label="🎼 Structured Song Summary"),
+        gr.Textbox(label="🤖 LangChain Mistral's Response")
     ],
-    title="🎶 Music Intelligence Assistant (LLM-powered)",
-    description="Upload audio, analyze song features and virality, and ask strategic questions to a local Mistral model."
+    title="🎶 LangChain Music Emotion AI",
+    description="LLM + Music Intelligence using LangChain + Mistral + Gradio"
 )
 
 if __name__ == "__main__":
